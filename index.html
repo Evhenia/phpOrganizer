@@ -1,20 +1,28 @@
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>lab_1</title>
+	<title>Task Planner Bondarenko</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<div align = "center">
-		<form name="loginForm" action="scripts/calendar.php" method="post" >
-
-			<span align="left">Ваш логин:</span><input type = "text" name="loginTextbox" value="Введите ваш логин">
-			<p></p>
-			<span align="left">Ваш пароль:</span><input type = "password" name="passwordTextbox">
-			<input type = "submit" name="enterButton" value = "Войти" >
-
-		</form>
+	<h1>Регистрация</h1>
+	<form action="scripts/save_user.php" method="post">
+		<p>
+	    <input name="loginString" type="text" size="15" maxlength="15" placeholder = "Enter login">
+		<p>
+	    <input name="emailString" type="text" size="15" maxlength="15" placeholder = "Enter e-mail">
+		<p>
+	    <input name="passwordString" type="password" size="15" maxlength="15" placeholder = "Enter password">
+	    <p>
+	    <input name="passwordCheckString" type="password" size="15" maxlength="15" placeholder = "Repeat password">
+		<p>
+	    <input type="submit" name="submit" value="Register">
+		</div>
+	</form>
 	
-	</div>
-	
+<form action = "scripts/calendar.php" method= "GET">
+		<input type = "submit" value = "Calendar">
+</form>
 </body>
 </html>
